@@ -1,0 +1,22 @@
+{
+  "verified_at": "2026-08-26",
+  "base": {
+    "name": "市场开发重点项目周报管理（V2）",
+    "url": "https://foix66zekl.feishu.cn/base/HndRbPcSda4E16saPa3cmtgZnHc",
+    "token": "HndRbPcSda4E16saPa3cmtgZnHc",
+    "revision": 118,
+    "time_zone": "Asia/Shanghai"
+  },
+  "workflow_counts": {"total": 17, "enabled": 15, "disabled": 2, "timer": 8},
+  "timer_workflows": [
+    {"id": "wkfJfjs68UuATwzl", "member": "overdue-candidate-reminder", "status": "enabled", "rule": "DAILY", "start_time": "2026/08/18 17:05"},
+    {"id": "wkfLhxcU7iU3S0gU", "member": "weekly-report-synthesis", "status": "enabled", "rule": "DAILY", "start_time": "2026/08/24 21:00"},
+    {"id": "wkfxteIYYrG7IS6j", "member": "legacy-weekly-plan-loop", "status": "disabled", "rule": "DAILY", "start_time": "2026/08/23 21:20"},
+    {"id": "wkfVPIfLSLEBgHyZ", "member": "completion-aggregation", "status": "enabled", "rule": "DAILY", "start_time": "2026/08/24 22:00"},
+    {"id": "wkf2rnPTlPB59l22", "member": "next-plan-aggregation", "status": "enabled", "rule": "DAILY", "start_time": "2026/08/24 22:10"},
+    {"id": "wkfJ1qtMnfTZtvon", "member": "cumulative-progress", "status": "enabled", "rule": "DAILY", "start_time": "2026/08/24 22:30"},
+    {"id": "wkfvdxKwo0RBHPOl", "member": "master-data-sync", "status": "enabled", "rule": "DAILY", "start_time": "2026/08/24 23:00"},
+    {"id": "wkfMX4NEjcOGVvCZ", "member": "leadership-change-notification", "status": "enabled", "rule": "DAILY", "start_time": "2026/08/24 23:45"}
+  ],
+  "authority": "live Base +workflow-get; this file is a refreshable baseline, not a substitute for fresh read"
+}

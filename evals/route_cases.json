@@ -1,0 +1,17 @@
+{
+  "mode": "manual-only",
+  "status": "candidate",
+  "cases": [
+    {"text": "手动凝练今天待处理的周报并生成状态候选", "expected": "weekly-report-synthesis"},
+    {"text": "按 22:00 规则把已提炼周报归集到 02", "expected": "completion-aggregation"},
+    {"text": "把下周目标按小类写回推进清单", "expected": "next-plan-aggregation"},
+    {"text": "检查锚点后的变化并重算累计进展", "expected": "cumulative-progress"},
+    {"text": "同步四类基础资料来源并在语义变化时更新主档", "expected": "master-data-sync"},
+    {"text": "判断领导口径是否有重要变化并发送增量通知", "expected": "leadership-change-notification"},
+    {"text": "提醒已经逾期但还没确认的候选", "expected": "overdue-candidate-reminder"},
+    {"text": "新增项目后同步项目选项和领导基线", "expected": "builtin-immediate-workflow"},
+    {"text": "项目改名后更新表单选项", "expected": "builtin-immediate-workflow"},
+    {"text": "启用 21:20 的旧计划闭环", "expected": "blocked-disabled-legacy"}
+  ],
+  "promotion_gate": "任何成员改为模型自动发现前，补 trigger_eval、近邻误触发、route-confusion 和真实执行读回。"
+}

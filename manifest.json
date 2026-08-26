@@ -1,0 +1,24 @@
+{
+  "name": "investment-base-scheduled",
+  "version": "0.1.0-candidate",
+  "owner": "用户与业务负责人（未指定单一 owner）",
+  "updated_at": "2026-08-26",
+  "review_cadence": "7d",
+  "status": "candidate-manual",
+  "maturity_tier": "production",
+  "context_budget_tier": "production",
+  "activation": "manual-only",
+  "base_url": "https://foix66zekl.feishu.cn/base/HndRbPcSda4E16saPa3cmtgZnHc",
+  "source": "市场开发重点项目周报管理（V2） Base revision 118 fresh read",
+  "members": [
+    "weekly-report-synthesis",
+    "completion-aggregation",
+    "next-plan-aggregation",
+    "cumulative-progress",
+    "master-data-sync",
+    "leadership-change-notification",
+    "overdue-candidate-reminder",
+    "legacy-weekly-plan-loop"
+  ],
+  "rollback_boundary": "停止外部调度并恢复 manual-only；不自动删除、回滚或反写已有 Base 记录。"
+}

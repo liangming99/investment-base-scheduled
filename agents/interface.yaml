@@ -1,0 +1,23 @@
+interface:
+  display_name: "投资项目 Base 定时工作流"
+  short_description: "手动执行和核验 Base 定时任务"
+  default_prompt: "Use $investment-base-scheduled. 以 https://foix66zekl.feishu.cn/base/HndRbPcSda4E16saPa3cmtgZnHc 为唯一入口，先 fresh-read 当前 Base 定义，再手动选择一个定时成员执行并完整读回。"
+
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets:
+    - "openai"
+    - "generic"
+  activation:
+    mode: "manual"
+    paths: []
+  execution:
+    context: "inline"
+    shell: "bash"
+  trust:
+    source_tier: "local"
+    remote_inline_execution: "forbid"
+    remote_metadata_policy: "allow-metadata-only"
+  degradation:
+    openai: "manual-only; no background scheduler"
+    generic: "manual-only; provider, credentials, and scheduler remain external"
